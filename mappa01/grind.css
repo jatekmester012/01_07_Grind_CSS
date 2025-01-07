@@ -1,0 +1,15 @@
+.Grind-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.Grind-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}

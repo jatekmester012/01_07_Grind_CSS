@@ -1,0 +1,37 @@
+.Grind-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.Grind-item {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+}
+
+/* Hover hatás: az elem megnagyobbodik és kiemelkedik */
+.Grind-item:hover {
+    transform: scale(1.2); /* Az elem 20%-kal nagyobb lesz */
+    z-index: 10; /* Az elem előrébb kerül */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Árnyékot kap */
+}
+
+/* Az 5. elem kétszeres szélességgel jelenik meg */
+.Grind-item:nth-child(17) {
+    grid-column: span 2;
+}
+
+/* Háttérkép beállítása */
+body {
+    background-image: url('meme-laptop-n0uao9ya07hkzhgj.jpg');
+    background-size: cover;
+    background-position: center;
+}
